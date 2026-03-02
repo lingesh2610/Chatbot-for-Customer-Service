@@ -6,56 +6,57 @@ This project was developed as part of a 1-month online internship to demonstrate
 
 Key Features
 
-Intent Recognition: Uses keyword matching for greetings and farewells.
+1) Intent Recognition: Uses keyword matching for greetings and farewells.
 
-Contextual Retrieval: Utilizes a knowledge base to answer specific customer queries.
+2) Contextual Retrieval: Utilizes a knowledge base to answer specific customer queries.
 
-NLP Pipeline: Implements tokenization, lemmatization, and stop-word removal.
+3) NLP Pipeline: Implements tokenization, lemmatization, and stop-word removal.
 
-Similarity Scoring: Employs TF-IDF Vectorization and Cosine Similarity to find the most relevant answer even if the user's phrasing varies.
+4) Similarity Scoring: Employs TF-IDF Vectorization and Cosine Similarity to find the most relevant answer even if the user's phrasing varies.
 
-Graceful Error Handling: Provides a fallback response and contact information when a query cannot be resolved.
+5) Graceful Error Handling: Provides a fallback response and contact information when a query cannot be resolved.
 
 Technologies Used
 
-Language: Python 3.x
+1. Language: Python 3.x
 
-NLP Library: NLTK (Natural Language Toolkit)
+2. NLP Library: NLTK (Natural Language Toolkit)
 
-Machine Learning Library: Scikit-learn (for Vectorization and Similarity)
+3. Machine Learning Library: Scikit-learn (for Vectorization and Similarity)
 
-Data Handling: String manipulation and Regular Expressions (Regex)
+4. Data Handling: String manipulation and Regular Expressions (Regex)
+
 
 How It Works
 
 The chatbot follows a standard NLP pipeline to process user input:
 
-Preprocessing: The knowledge base and user input are converted to lowercase.
+1) Preprocessing: The knowledge base and user input are converted to lowercase.
 
-Tokenization: Text is broken down into sentences and individual words.
+2) Tokenization: Text is broken down into sentences and individual words.
 
-Lemmatization: Words are reduced to their root dictionary form (e.g., "shipping" becomes "ship") to improve matching accuracy.
+3) Lemmatization: Words are reduced to their root dictionary form (e.g., "shipping" becomes "ship") to improve matching accuracy.
 
-TF-IDF Vectorization: Transforms text into numerical vectors, emphasizing unique "keyword" terms over common filler words.
+4) TF-IDF Vectorization: Transforms text into numerical vectors, emphasizing unique "keyword" terms over common filler words.
 
-Cosine Similarity: Calculates the "angle" between the user query vector and knowledge base vectors. The sentence with the highest similarity score is returned as the answer.
+5) Cosine Similarity: Calculates the "angle" between the user query vector and knowledge base vectors. The sentence with the highest similarity score is returned as the answer.
 
 Installation & Setup
 
 To run this project locally, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
 
 git clone <your-repository-link>
 
 
-Install dependencies:
+2. Install dependencies:
 Ensure you have pip installed, then run:
 
 pip install nltk scikit-learn
 
 
-Run the application:
+3. Run the application:
 
 python chatbot.py
 
